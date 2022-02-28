@@ -79,14 +79,14 @@ var config_data = `
         "code":"al",
         "title": "Lower Cargo Scored",
         "type":"counter"
-      },
-      "Auto Aquired Cargo": {
-        "code":"ac",
-        "title": "Picked up more cargo?",
-        "type":"bool"
       }
     },
     "teleop": {
+      "Total Cargo Shot": {
+        "code":"cs",
+        "title": "Cargo Shot",
+        "type":"counter"
+      },
       "Upper Cargo Scored": {
         "code":"tu",
         "title": "Uppoer Cargo Scored",
@@ -101,18 +101,6 @@ var config_data = `
         "code":"wd",
         "title": "Was Defended",
         "type":"bool"
-      },
-      "Cargo Intake From": {
-        "code":"cif",
-        "title": "Cargo Intake From",
-        "type":"radio",
-        "choices":{
-          "t":"Terminal<br>",
-          "g":"Ground<br>",
-          "b":"Both<br>",
-          "x":"Not Attempted"
-        },
-        "defaultValue":"x"
       },
       "Shooting Spot": {
         "code":"ss",
@@ -136,28 +124,10 @@ var config_data = `
         },
         "defaultValue":"x"
       },
-      "Last successful rung": {
-        "code":"lsr",
-        "title": "last succcessful rung",
-        "type":"radio",
-        "choices":{
-          "1":"Low<br>",
-          "2":"Mid<br>",
-          "3":"High<br>",
-          "4":"Traversal<br>",
-          "x":"Successful/Not Attempted"
-        },
-        "defaultValue":"x"
-      },
       "Started Climb before Endgame": {
         "code":"be",
         "title": "Started climb before EndGame",
         "type":"bool"
-      },
-      "Num of Robots Climbed": {
-        "code":"cn",
-        "title": "# of alliance bots climbed",
-        "type":"counter"
       }
     },
     "postmatch": {
@@ -185,24 +155,19 @@ var config_data = `
         },
         "defaultValue":"x"
       },
-      "Shot enemy balls away?": {
-        "code":"ba",
-        "title": "Shot enemy balls away?",
-        "type":"bool"
-      },
       "Died/Tipped": {
         "code":"d",
         "title": "Died/Tipped",
         "type":"bool"
       },
+      "Fouls": {
+        "code":"f",
+        "title": "Total Fouls,
+        "type":"counter"
+      },
       "Card Foul": {
         "code":"cf",
         "title": "Yellow/Red Card",
-        "type":"bool"
-      },
-      "Make good alliance partner?": {
-        "code":"all",
-        "title": "Make good alliance partner?",
         "type":"bool"
       },
       "Comments": {
@@ -211,18 +176,7 @@ var config_data = `
         "type":"text",
         "size":15,
         "maxSize":50
-      },
-      "Confidence Rating": {
-        "code":"cnf",
-        "title": "Confidence Rating",
-        "type":"radio",
-        "choices":{
-          "v":"Very Confident<br>",
-          "a":"Average<br>",
-          "n":"Not Confident"
-      },
-       "defaultValue":"a"
-    }
+      }
     }
   }
 }`;
