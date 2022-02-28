@@ -162,7 +162,7 @@ var config_data = `
       },
       "Fouls": {
         "code":"f",
-        "title": "Total Fouls,
+        "title": "Total Fouls",
         "type":"counter"
       },
       "Card Foul": {
