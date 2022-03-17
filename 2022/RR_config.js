@@ -82,9 +82,9 @@ var config_data = `
       }
     },
     "teleop": {
-      "Total Cargo Shot": {
+      "Total Cargo Missed": {
         "code":"cs",
-        "title": "Cargo Shot",
+        "title": "Cargo Missed",
         "type":"counter"
       },
       "Upper Cargo Scored": {
@@ -143,9 +143,9 @@ var config_data = `
         },
         "defaultValue":"x"
       },
-      "Defense Rating": {
+      "Played Defense": {
         "code":"dr",
-        "title": "Defense Rating",
+        "title": "Played Defense",
         "type":"radio",
         "choices":{
           "n":"Not Effective<br>",
