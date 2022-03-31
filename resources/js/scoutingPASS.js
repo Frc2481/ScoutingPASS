@@ -33,6 +33,7 @@ function addCounter(table, idx, name, data){
   var button1 = document.createElement("button");
   button1.setAttribute("type", "checkbox");
   button1.setAttribute("onclick", "counter(this.parentElement, -1)");
+  button1.setAttribute("style", "width: 3em; height: 3em;");
   button1.innerHTML += "-"
   cell2.appendChild(button1);
 
@@ -51,6 +52,7 @@ function addCounter(table, idx, name, data){
   var button2 = document.createElement("button");
   button2.setAttribute("type", "checkbox");
   button2.setAttribute("onclick", "counter(this.parentElement, 1)");
+  button2.setAttribute("style", "width: 3em; height: 3em;");
   button2.innerHTML += "+";
   cell2.appendChild(button2);
   return idx+1;
